@@ -35,33 +35,4 @@ for amerFilename in os.listdir('.'):
 
     # Rename the files.
     print(f'Renaming "{amerFilename}" to "{euroFilename}"...')
-    shutil.move(amerFilename, euroFilename)  # This is the one that actually renames the file.
-    # shutil.move() will overwrite files with the same name, so be careful!
-    
-    
-    
-    
-    
-    
-    # If you want to avoid overwriting files, you can check if the file already exists before renaming it.
-    # if os.path.exists(euroFilename):
-    #     print(f'Error: "{euroFilename}" already exists.')
-    # else:
-    #     shutil.move(amerFilename, euroFilename)  # This is the one that actually renames the file.
-    # You can also use os.rename() instead of shutil.move() if you don't need to move the file to a different directory.
-    # os.rename(amerFilename, euroFilename)  # This is the one that actually renames the file.
-    # os.rename() will not overwrite files with the same name, so be careful!
-    # If you want to avoid overwriting files, you can check if the file already exists before renaming it.
-    # if os.path.exists(euroFilename):
-    #     print(f'Error: "{euroFilename}" already exists.')
-    # else:
-    #     os.rename(amerFilename, euroFilename)  # This is the one that actually renames the file.
-    # You can also use os.replace() instead of shutil.move() if you want to replace the file if it already exists.
-    # os.replace() will overwrite files with the same name, so be careful!
-    # If you want to avoid overwriting files, you can check if the file already exists before renaming it.
-    # if os.path.exists(euroFilename):
-    #     print(f'Error: "{euroFilename}" already exists.')
-    # else:
-    #     os.replace(amerFilename, euroFilename)  # This is the one that actually renames the file.
-
-    # done
+    shutil.move(amerFilename, euroFilename)  
